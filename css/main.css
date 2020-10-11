@@ -316,10 +316,9 @@ html, body {
 
 body {
   margin: 0px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  color: #666666;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  color: #000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-decoration: none; }
@@ -356,16 +355,19 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 1.875rem; }
   .header__logo {
     display: flex;
     align-items: center;
     margin-right: 10%; }
     .header__logo-img {
-      margin-right: 0.75rem; }
-    .header__logo-pic {
+      margin-right: 0.75rem;
       width: 9.0625rem;
       height: 7.375rem; }
+    .header__logo-pic {
+      width: 100%;
+      height: 100%; }
     .header__logo-text {
       font-family: 'Noto Sans', sans-serif;
       font-weight: 400;
@@ -425,3 +427,62 @@ a {
     text-transform: uppercase;
     font-size: 1.5rem;
     color: #fff; }
+
+.welcome__about {
+  display: flex;
+  justify-content: space-between; }
+  .welcome__about-left {
+    display: flex;
+    align-items: flex-end; }
+    .welcome__about-left-pic {
+      margin-right: 1.25rem;
+      width: 10.9375rem;
+      height: 12.875rem; }
+    .welcome__about-left-img {
+      width: 100%;
+      height: 100%; }
+  .welcome__about-right {
+    display: flex; }
+    .welcome__about-right-pic {
+      margin-left: 3.5625rem;
+      width: 14rem;
+      height: 12.8125rem; }
+    .welcome__about-right-img {
+      width: 100%;
+      height: 100%; }
+.welcome__vantages {
+  margin-bottom: 0.75rem; }
+  .welcome__vantages-list {
+    display: flex;
+    flex-direction: column; }
+  .welcome__vantages-item {
+    position: relative;
+    padding-left: 3.9375rem;
+    margin-bottom: 2.125rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem; }
+    .welcome__vantages-item:last-child {
+      margin-bottom: 0; }
+    .welcome__vantages-item:before {
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      content: '';
+      background: url(../img/star.png);
+      width: 2.5rem;
+      height: 2.375rem; }
+.welcome__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .welcome__contact-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .welcome__contact-contacts-text {
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 400;
+      font-size: 1.25rem;
+      color: #000; }
