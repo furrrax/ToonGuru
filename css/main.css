@@ -506,7 +506,8 @@ a {
       height: 100%; }
     .welcome__contact-socials-pic {
       width: 3.5rem;
-      height: 3.5rem; }
+      height: 3.5rem;
+      fill: #02a9bb; }
 
 .order {
   display: flex;
