@@ -3,6 +3,7 @@
     width: 95%;
     margin: 0 auto;
     padding-top: rem(30px);
+    padding-bottom: rem(30px);
 }
 
 .header {
@@ -171,6 +172,7 @@
                 background: url(../img/star.png);
                 width: rem(40px);
                 height: rem(38px);
+                background-size: cover;
             }
         }
     }
@@ -265,13 +267,13 @@
         display: flex;
 
         &-text {
-            max-width: rem(255px);
+            max-width: rem(271px);
             font-family: 'Noto Sans', sans-serif;
             font-weight: 400;
             font-size: rem(18px);
             color: #000;
             line-height: 30px;
-            margin-right: rem(60px);
+            margin-right: rem(33px);
         }
         &-btn {
             align-self: flex-end;

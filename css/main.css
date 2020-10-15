@@ -338,6 +338,9 @@ a {
   background-color: #fff;
   position: relative; }
 
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 0.9375rem; } }
 @media screen and (max-width: 960px) {
   html {
     font-size: 0.875rem; } }
@@ -349,7 +352,8 @@ a {
   max-width: 75rem;
   width: 95%;
   margin: 0 auto;
-  padding-top: 1.875rem; }
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem; }
 
 .header {
   display: flex;
@@ -476,7 +480,8 @@ a {
         content: '';
         background: url(../img/star.png);
         width: 2.5rem;
-        height: 2.375rem; }
+        height: 2.375rem;
+        background-size: cover; }
   .welcome__contact {
     display: flex;
     flex-direction: column;
@@ -543,13 +548,13 @@ a {
   .order__desc {
     display: flex; }
     .order__desc-text {
-      max-width: 15.9375rem;
+      max-width: 16.9375rem;
       font-family: 'Noto Sans', sans-serif;
       font-weight: 400;
       font-size: 1.125rem;
       color: #000;
       line-height: 30px;
-      margin-right: 3.75rem; }
+      margin-right: 2.0625rem; }
     .order__desc-btn {
       align-self: flex-end;
       padding-bottom: 50px; }

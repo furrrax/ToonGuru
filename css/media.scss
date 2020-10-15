@@ -22,6 +22,9 @@ $desktop: 1200px;
 }
 
 html {
+	@include desktop {
+		font-size: rem(15px);
+    }
     @include tablets {
 		font-size: rem(14px);
     }
