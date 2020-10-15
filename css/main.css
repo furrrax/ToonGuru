@@ -429,7 +429,7 @@ a {
     color: #fff; }
 
 .welcome {
-  margin-bottom: 3.3125rem; }
+  margin-bottom: 5.875rem; }
   .welcome__about {
     display: flex;
     justify-content: space-between; }
@@ -507,3 +507,75 @@ a {
     .welcome__contact-socials-pic {
       width: 3.5rem;
       height: 3.5rem; }
+
+.order {
+  display: flex;
+  justify-content: space-between; }
+  .order__showreel {
+    display: flex;
+    flex-direction: column;
+    position: relative; }
+    .order__showreel-title {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -3.125rem;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 700;
+      font-size: 2.1875rem;
+      color: #138d9a; }
+    .order__showreel-video {
+      border-radius: 25px; }
+    .order__showreel-subtitle {
+      margin-top: 0.5rem;
+      text-transform: uppercase;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 700;
+      font-size: 0.9375rem;
+      color: #000; }
+    .order__showreel-desc {
+      margin-top: 0.875rem;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 400;
+      font-size: 0.8125rem;
+      color: #000; }
+  .order__desc {
+    display: flex; }
+    .order__desc-text {
+      max-width: 15.9375rem;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 400;
+      font-size: 1.125rem;
+      color: #000;
+      line-height: 30px;
+      margin-right: 3.75rem; }
+    .order__desc-btn {
+      align-self: flex-end;
+      padding-bottom: 50px; }
+      .order__desc-btn-link {
+        position: relative;
+        background-color: #02a9bb;
+        width: 15.3125rem;
+        height: 9.375rem;
+        border: 0;
+        outline: 0; }
+        .order__desc-btn-link:before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          content: '';
+          width: 14.375rem;
+          height: 8.4375rem;
+          background-color: transparent;
+          border: 2px dashed #fff; }
+      .order__desc-btn-text {
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 700;
+        font-size: 2.1875rem;
+        color: #fff;
+        line-height: 50px; }
+      .order__desc-btn-img {
+        position: absolute;
+        bottom: 133px;
+        left: 37px; }
