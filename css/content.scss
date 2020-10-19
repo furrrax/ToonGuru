@@ -27,6 +27,10 @@
             margin-right: rem(12px);
             width: rem(133px);
             height: rem(107px);
+            @include phones {
+                width: rem(70px);
+                height: unset;
+            }
         }
         &-pic {
             width: 100%;
@@ -39,6 +43,11 @@
             font-size: rem(25px);
             color: #000;
             line-height: rem(35px);
+            @include phones {
+                font-size: rem(15px);
+                max-width: rem(70px);
+                line-height: rem(17px);
+            }
         }
     }
 
@@ -72,6 +81,9 @@
             }
             @include tablets {
                 font-size: rem(20px);
+            }
+            @include phones {
+                font-size: rem(15px);
             }
             &:hover {
                 color: #1f90a2;
