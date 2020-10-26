@@ -702,6 +702,35 @@ a {
         bottom: 133px;
         left: 37px; }
 
+.videos {
+  margin-top: 1.25rem; }
+  .videos__block__ads {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .videos__block__ads-title {
+      margin-bottom: 1.25rem;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 700;
+      font-size: 2.1875rem;
+      color: #138d9a; }
+  .videos__block-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+  .videos__block-video {
+    border-radius: 25px; }
+    @media screen and (max-width: 670px) {
+      .videos__block-video {
+        width: 25rem;
+        height: 14rem; } }
+  .videos__block-subtitle {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: #000;
+    margin-top: 1.5625rem; }
+
 .footer {
   margin-top: 3.125rem;
   border: 2px dashed #02a9bb;

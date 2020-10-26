@@ -1,0 +1,50 @@
+.footer {
+    margin-top: rem(50px);
+    border: 2px dashed #02a9bb;
+    border-bottom: none;
+    border-top-left-radius: rem(25px);
+    border-top-right-radius: rem(25px);
+    padding: rem(25px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include phones {
+        flex-direction: column;
+    }
+
+    &__copyright {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 400;
+        font-size: rem(20px);
+        color: #000;
+
+        &-item {
+            margin-bottom: rem(15px);
+            &:last-child {
+                margin-bottom: 0;
+            }
+            @include phones {
+                display: inline-block;
+                &:last-child {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &__contact {
+        &-contacts {
+            margin-top: 0;
+            @include phones {
+                margin-top: rem(15px);
+                margin-bottom: rem(15px);
+            }
+        }
+    }
+
+    &__socials {
+        max-width: rem(270px);
+    }
+}

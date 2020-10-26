@@ -1,0 +1,110 @@
+.order {
+    display: flex;
+    justify-content: space-between;
+    @include desktop {
+        justify-content: unset;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__showreel {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        &-title {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: rem(-50px);
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 700;
+            font-size: rem(35px);
+            color: #138d9a;
+        }
+        &-video {
+            border-radius: 25px;
+            @include phones {
+                width: 400px;
+                height: 224px;
+            }
+        }
+        &-subtitle {
+            margin-top: rem(8px);
+            text-transform: uppercase;
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 700;
+            font-size: rem(15px);
+            color: #000;
+        }
+        &-desc {
+            margin-top: rem(14px);
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 400;
+            font-size: rem(13px);
+            color: #000;
+        }
+    }
+
+    &__desc {
+        display: flex;
+        @include desktop {
+            margin-top: rem(50px);
+        }
+
+        &-text {
+            max-width: rem(271px);
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 400;
+            font-size: rem(18px);
+            color: #000;
+            line-height: 30px;
+            margin-right: rem(33px);
+        }
+        &-btn {
+            align-self: flex-end;
+            padding-bottom: 50px;
+            @include desktop {
+                padding-bottom: 0;
+                padding-top: rem(100px);
+            }
+            @include tablets {
+                padding-top: rem(110px);
+            }
+            @include phones {
+                padding-top: rem(150px);
+            }
+            &-link {
+                position: relative;
+                background-color: #02a9bb;
+                //padding: rem(40px);
+                width: rem(245px);
+                height: rem(150px);
+                border: 0;
+                outline: 0;
+                &:before {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    content: '';
+                    width: rem(230px);
+                    height: rem(135px);
+                    background-color: transparent;
+                    border: 2px dashed #fff;
+                }
+            }
+            &-text {
+                font-family: 'Noto Sans', sans-serif;
+                font-weight: 700;
+                font-size: rem(35px);
+                color: #fff;
+                line-height: 50px;
+            }
+            &-img {
+                position: absolute;
+                bottom: 133px;
+                left: 37px;
+            }
+        }
+    }
+}
