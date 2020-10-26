@@ -38,7 +38,3 @@ a {
     background-color: #fff;
     position: relative;
 }
-
-@function rem($px) {
-    @return $px / 16px + 0rem;
-}

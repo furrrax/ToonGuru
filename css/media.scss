@@ -1,5 +1,5 @@
 // resolutions
-$phones: 640px;
+$phones: 670px;
 $tablets: 960px;
 $desktop: 1200px;
 
@@ -31,4 +31,8 @@ html {
     @include phones {
 		font-size: rem(13px);
     }
+}
+
+@function rem($px) {
+    @return $px / 16px + 0rem;
 }

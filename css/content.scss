@@ -9,9 +9,10 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100%;
     margin-bottom: rem(30px);
+    position: relative;
 
     &__logo {
         display: flex;
@@ -20,16 +21,15 @@
         @include desktop {
             margin-right: 6%;
         }
-        @include tablets {
-            margin-right: unset;
-        }
+        
         &-img {
             margin-right: rem(12px);
             width: rem(133px);
             height: rem(107px);
+            background-color: #0299a2;
             @include phones {
                 width: rem(70px);
-                height: unset;
+                height: rem(55px);
             }
         }
         &-pic {
@@ -52,7 +52,7 @@
     }
 
     &__nav {
-        margin-right: auto;
+        //margin-right: auto;
         @include tablets {
             margin-right: unset;
         }
@@ -93,22 +93,14 @@
     }
 
     &__lang {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
 
-        &-btn {
-            display: none;
-            @include tablets {
-                display: block;
-                .header__lang-link {
-                    background-color: #4a81a8;
-                }
-            }
-        }
-
-        &-list {
-            @include tablets {
-                display: none;
-            }
+        &-list {          
             display: flex;
+
             &:hover {
                 .header__lang-item {
                     margin-right: rem(5px);
@@ -125,6 +117,7 @@
             @include desktop {
                 margin-right: rem(-37px);
             }
+    
             &:first-child {
                 z-index: 20;
                 .header__lang-link {
