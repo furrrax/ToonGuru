@@ -370,8 +370,8 @@ a {
         margin-right: 6%; } }
     .header__logo-img {
       margin-right: 0.75rem;
-      width: 8.3125rem;
-      height: 6.6875rem;
+      width: 8.75rem;
+      height: 7.0625rem;
       background-color: #0299a2; }
       @media screen and (max-width: 670px) {
         .header__logo-img {
