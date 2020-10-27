@@ -23,9 +23,15 @@
         }
         &-video {
             border-radius: 25px;
+            width: rem(555px);
+            height: rem(313px);
             @include phones {
                 width: 400px;
                 height: 224px;
+            }
+            @include smallphones {
+                width: 300px;
+                height: 166px;
             }
         }
         &-subtitle {
@@ -50,6 +56,10 @@
         @include desktop {
             margin-top: rem(50px);
         }
+        @include smallphones {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
 
         &-text {
             max-width: rem(271px);
@@ -59,6 +69,10 @@
             color: #000;
             line-height: 30px;
             margin-right: rem(33px);
+            @include smallphones {
+                margin-right: 0;
+                margin-top: 10px;
+            }
         }
         &-btn {
             align-self: flex-end;
@@ -73,6 +87,10 @@
             @include phones {
                 padding-top: rem(150px);
             }
+            @include smallphones {
+                align-self: unset;
+            }
+
             &-link {
                 position: relative;
                 background-color: #02a9bb;

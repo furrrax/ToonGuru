@@ -1,4 +1,5 @@
 // resolutions
+$small-phones: 500px;
 $phones: 670px;
 $tablets: 960px;
 $desktop: 1200px;
@@ -17,6 +18,12 @@ $desktop: 1200px;
 
 @mixin phones {
 	@media screen and (max-width: $phones) {
+		@content;
+	}
+}
+
+@mixin smallphones {
+	@media screen and (max-width: $small-phones) {
 		@content;
 	}
 }
