@@ -31,8 +31,6 @@
         
         &-img {
             margin-right: rem(12px);
-            //width: rem(133px);
-            //height: rem(107px);
             width: rem(140px);
             height: rem(113px);
             background-color: #0299a2;
@@ -67,6 +65,9 @@
         @include smallphones {
             margin-right: unset;
             margin-top: 15px;
+        }
+        @include smallphones {
+            align-self: center;
         }
         &-list {
             display: flex;

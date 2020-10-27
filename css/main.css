@@ -407,6 +407,9 @@ a {
     .header__nav {
       margin-right: unset;
       margin-top: 15px; } }
+  @media screen and (max-width: 500px) {
+    .header__nav {
+      align-self: center; } }
   .header__nav-list {
     display: flex; }
   .header__nav-item {
