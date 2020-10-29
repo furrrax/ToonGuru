@@ -161,6 +161,9 @@
                     width: 100%;
                     margin-bottom: rem(15px);
                 }
+                @include smallphones {
+                    width: rem(330px);
+                }
             }
 
             &__text {

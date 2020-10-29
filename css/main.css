@@ -873,6 +873,9 @@ a {
             margin-right: 0;
             width: 100%;
             margin-bottom: 0.9375rem; } }
+        @media screen and (max-width: 500px) {
+          .videos__block__info__description {
+            width: 20.625rem; } }
       .videos__block__info__text {
         white-space: nowrap; }
     .videos__block-list {
