@@ -759,21 +759,13 @@ a {
         text-align: center; } }
     .videos__block:first-child {
       margin-top: 0; }
-    .videos__block__ads {
-      /* display: flex;
-      flex-direction: column;
-      align-items: center;
-      @include smallphones {
-          align-items: unset;
-          text-align: center;
-      } */ }
-      .videos__block__ads-title {
-        margin-bottom: 1.25rem;
-        font-family: 'Noto Sans', sans-serif;
-        font-weight: 700;
-        font-size: 2.1875rem;
-        color: #138d9a;
-        text-align: center; }
+    .videos__block__ads-title {
+      margin-bottom: 1.25rem;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 700;
+      font-size: 2.1875rem;
+      color: #138d9a;
+      text-align: center; }
     .videos__block__info {
       margin-bottom: 1.875rem;
       display: flex;
@@ -854,6 +846,9 @@ a {
             width: 11.875rem;
             height: 6.0625rem;
             margin-right: 5%; }
+            @media screen and (max-width: 500px) {
+              .videos__block__info__logo__dev-animax {
+                margin-right: 0; } }
           .videos__block__info__logo__dev-riki {
             width: 7.9375rem;
             height: 3.5rem; }

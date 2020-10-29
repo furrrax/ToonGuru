@@ -17,14 +17,7 @@
         }
 
         &__ads {
-            /* display: flex;
-            flex-direction: column;
-            align-items: center;
-            @include smallphones {
-                align-items: unset;
-                text-align: center;
-            } */
-
+            
             &-title {
                 margin-bottom: rem(20px);
                 font-family: 'Noto Sans', sans-serif;
@@ -136,6 +129,9 @@
                         width: rem(190px);
                         height: rem(97px);
                         margin-right: 5%;
+                        @include smallphones {
+                            margin-right: 0;
+                        }
                     }
                     &-riki {
                         width: rem(127px);
