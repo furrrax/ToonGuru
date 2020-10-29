@@ -755,7 +755,7 @@ a {
         align-items: center; } }
     @media screen and (max-width: 500px) {
       .videos__block {
-        align-items: unset;
+        align-items: center;
         text-align: center; } }
     .videos__block:first-child {
       margin-top: 0; }
@@ -793,6 +793,10 @@ a {
           .videos__block__info-left {
             margin-right: 0;
             margin-bottom: 0.625rem; } }
+        @media screen and (max-width: 500px) {
+          .videos__block__info-left {
+            flex-direction: column;
+            margin-right: 0; } }
       @media screen and (max-width: 1200px) {
         .videos__block__info-right {
           flex-wrap: wrap;
@@ -803,6 +807,9 @@ a {
         font-size: 1.875rem;
         color: #000;
         margin-right: 5%; }
+        @media screen and (max-width: 500px) {
+          .videos__block__info__name {
+            margin-right: 0; } }
       .videos__block__info__series {
         display: flex;
         align-items: center;
