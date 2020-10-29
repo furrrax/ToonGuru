@@ -657,7 +657,7 @@ a {
     .order__showreel-video {
       border-radius: 25px;
       width: 34.6875rem;
-      height: 19.5625rem; }
+      height: 19.5rem; }
       @media screen and (max-width: 670px) {
         .order__showreel-video {
           width: 400px;
@@ -747,34 +747,62 @@ a {
 .videos {
   margin-top: 1.25rem; }
   .videos__block {
-    margin-top: 1.875rem; }
+    margin-top: 1.875rem;
+    display: flex;
+    flex-direction: column; }
+    @media screen and (max-width: 1200px) {
+      .videos__block {
+        align-items: center; } }
+    @media screen and (max-width: 500px) {
+      .videos__block {
+        align-items: unset;
+        text-align: center; } }
     .videos__block:first-child {
       margin-top: 0; }
     .videos__block__ads {
-      display: flex;
+      /* display: flex;
       flex-direction: column;
-      align-items: center; }
-      @media screen and (max-width: 500px) {
-        .videos__block__ads {
+      align-items: center;
+      @include smallphones {
           align-items: unset;
-          text-align: center; } }
+          text-align: center;
+      } */ }
       .videos__block__ads-title {
         margin-bottom: 1.25rem;
         font-family: 'Noto Sans', sans-serif;
         font-weight: 700;
         font-size: 2.1875rem;
-        color: #138d9a; }
+        color: #138d9a;
+        text-align: center; }
     .videos__block__info {
       margin-bottom: 1.875rem;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center; }
+      @media screen and (max-width: 1200px) {
+        .videos__block__info {
+          flex-wrap: wrap;
+          max-width: 50%; } }
+      .videos__block__info-left, .videos__block__info-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+      .videos__block__info-left {
+        margin-right: 5%; }
+        @media screen and (max-width: 1200px) {
+          .videos__block__info-left {
+            margin-right: 0;
+            margin-bottom: 0.625rem; } }
+      @media screen and (max-width: 1200px) {
+        .videos__block__info-right {
+          flex-wrap: wrap;
+          justify-content: center; } }
       .videos__block__info__name {
-        margin-bottom: 1.25rem;
         font-family: 'Noto Sans', sans-serif;
         font-weight: 400;
         font-size: 1.875rem;
-        color: #000; }
+        color: #000;
+        margin-right: 5%; }
       .videos__block__info__series {
         display: flex;
         align-items: center;
@@ -817,7 +845,8 @@ a {
             height: 5.1875rem; }
           .videos__block__info__logo__dev-animax {
             width: 11.875rem;
-            height: 6.0625rem; }
+            height: 6.0625rem;
+            margin-right: 5%; }
           .videos__block__info__logo__dev-riki {
             width: 7.9375rem;
             height: 3.5rem; }
@@ -825,17 +854,30 @@ a {
             width: 100%;
             height: 100%; }
       .videos__block__info__description {
-        max-width: 25rem;
+        max-width: 24.375rem;
         font-family: 'Noto Sans', sans-serif;
         font-weight: 400;
         font-size: 1.125rem;
         color: #000;
-        line-height: 150%; }
+        line-height: 150%;
+        margin-right: 5%; }
+        @media screen and (max-width: 1200px) {
+          .videos__block__info__description {
+            margin-right: 0;
+            width: 100%;
+            margin-bottom: 0.9375rem; } }
+      .videos__block__info__text {
+        white-space: nowrap; }
     .videos__block-list {
       width: 100%;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap; }
+      @media screen and (max-width: 1200px) {
+        .videos__block-list {
+          width: unset;
+          flex-wrap: unset;
+          flex-direction: column; } }
       @media screen and (max-width: 500px) {
         .videos__block-list {
           flex-direction: column; } }
@@ -849,10 +891,13 @@ a {
       } */ }
       .videos__block-item:first-child, .videos__block-item:nth-child(2) {
         margin-top: 0; }
+      @media screen and (max-width: 1200px) {
+        .videos__block-item:nth-child(2) {
+          margin-top: 1.875rem; } }
     .videos__block-video {
       border-radius: 25px;
       width: 34.6875rem;
-      height: 19.5625rem; }
+      height: 19.5rem; }
       @media screen and (max-width: 670px) {
         .videos__block-video {
           width: 25rem;

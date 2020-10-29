@@ -3,18 +3,27 @@
 
     &__block {
         margin-top: rem(30px);
+        display: flex;
+        flex-direction: column;
+        @include desktop {
+            align-items: center;
+        }
+        @include smallphones {
+            align-items: unset;
+            text-align: center;
+        }
         &:first-child {
             margin-top: 0;
         }
 
         &__ads {
-            display: flex;
+            /* display: flex;
             flex-direction: column;
             align-items: center;
             @include smallphones {
                 align-items: unset;
                 text-align: center;
-            }
+            } */
 
             &-title {
                 margin-bottom: rem(20px);
@@ -22,21 +31,48 @@
                 font-weight: 700;
                 font-size: rem(35px);
                 color: #138d9a;
+                text-align: center;
             }
         }
 
         &__info {
             margin-bottom: rem(30px);
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
+            @include desktop {
+                flex-wrap: wrap;
+                max-width: 50%;
+            }
+
+            &-left, &-right {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            &-left {
+                margin-right: 5%;
+                @include desktop {
+                    margin-right: 0;
+                    margin-bottom: rem(10px);
+                }
+            }
+
+            &-right {
+                @include desktop {
+                    //flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
 
             &__name {
-                margin-bottom: rem(20px);
                 font-family: 'Noto Sans', sans-serif;
                 font-weight: 400;
                 font-size: rem(30px);
                 color: #000;
+                margin-right: 5%;
             }
 
             &__series {
@@ -92,6 +128,7 @@
                     &-animax {
                         width: rem(190px);
                         height: rem(97px);
+                        margin-right: 5%;
                     }
                     &-riki {
                         width: rem(127px);
@@ -105,12 +142,22 @@
             }
 
             &__description {
-                max-width: rem(400px);
+                max-width: rem(390px);
                 font-family: 'Noto Sans', sans-serif;
                 font-weight: 400;
                 font-size: rem(18px);
                 color: #000;
                 line-height: 150%;
+                margin-right: 5%;
+                @include desktop {
+                    margin-right: 0;
+                    width: 100%;
+                    margin-bottom: rem(15px);
+                }
+            }
+
+            &__text {
+                white-space: nowrap;
             }
         }
 
@@ -119,6 +166,11 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+            @include desktop {
+                width: unset;
+                flex-wrap: unset;
+                flex-direction: column;
+            }
             @include smallphones {
                 flex-direction: column;
             }
@@ -128,6 +180,11 @@
             margin-top: rem(30px);
             &:first-child, &:nth-child(2) {
                 margin-top: 0;
+            }
+            @include desktop {
+                &:nth-child(2) {
+                    margin-top: rem(30px);
+                }
             }
             
             /* @include smallphones {
@@ -141,7 +198,7 @@
         &-video {
             border-radius: 25px;
             width: rem(555px);
-            height: rem(313px);
+            height: rem(312px);
             @include phones {
                 width: rem(400px);
                 height: rem(224px);
