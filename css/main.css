@@ -684,7 +684,7 @@ a {
     @media screen and (max-width: 1200px) {
       .order__desc {
         margin-top: 3.125rem; } }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 670px) {
       .order__desc {
         flex-direction: column-reverse;
         align-items: center; } }
@@ -696,7 +696,7 @@ a {
       color: #000;
       line-height: 30px;
       margin-right: 2.0625rem; }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 670px) {
         .order__desc-text {
           margin-right: 0;
           margin-top: 10px; } }
@@ -712,9 +712,7 @@ a {
           padding-top: 6.875rem; } }
       @media screen and (max-width: 670px) {
         .order__desc-btn {
-          padding-top: 9.375rem; } }
-      @media screen and (max-width: 500px) {
-        .order__desc-btn {
+          padding-top: 9.375rem;
           align-self: unset; } }
       .order__desc-btn-link {
         position: relative;
