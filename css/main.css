@@ -334,6 +334,9 @@ a {
   text-decoration: none;
   cursor: pointer; }
 
+button {
+  cursor: pointer; }
+
 .wrapper {
   background-color: #fff;
   position: relative; }
