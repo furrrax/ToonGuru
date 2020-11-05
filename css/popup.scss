@@ -1,0 +1,67 @@
+.popup {
+    //background-color: rgba(0, 0, 0, 0.3);
+    &__window {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: rem(5px);
+        background-color: #02a9bb;
+    }
+    &__form {
+        background-color: transparent;
+        border: 2px dashed #fff;
+        padding: rem(15px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__row {
+        margin-bottom: rem(10px);
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &-contacts {
+            display: flex;
+        }
+        &-comment {
+            width: 100%;
+        }
+    }
+    &__name, &__email, &__comment {
+        display: flex;
+        flex-direction: column;
+        &-title {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 400;
+            font-size: rem(20px);
+            color: #fff;
+            margin-bottom: rem(5px);
+        }
+    }
+    &__name {
+        margin-right: rem(10px);
+        &-input, &-email {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 400;
+            font-size: rem(16px);
+            color: #61646d;
+        }
+    }
+    &__comment {
+        &-input {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 400;
+            font-size: rem(16px);
+            color: #61646d;
+        }
+    }
+    &__title {
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 700;
+        font-size: rem(35px);
+        color: #fff;
+        margin-bottom: rem(15px);
+    }
+    
+}

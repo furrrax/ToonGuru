@@ -1,6 +1,7 @@
 .order {
     display: flex;
     justify-content: space-between;
+    position: relative;
     @include desktop {
         justify-content: unset;
         flex-direction: column;
@@ -114,7 +115,7 @@
                 font-weight: 700;
                 font-size: rem(35px);
                 color: #fff;
-                line-height: 50px;
+                line-height: rem(50px);
             }
             &-img {
                 position: absolute;
