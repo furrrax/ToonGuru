@@ -1,5 +1,12 @@
 .popup {
-    //background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+
     &__window {
         position: fixed;
         top: 50%;
@@ -18,14 +25,13 @@
     }
     &__row {
         margin-bottom: rem(10px);
-        &:last-child {
-            margin-bottom: 0;
-        }
+        
         &-contacts {
             display: flex;
         }
         &-comment {
             width: 100%;
+            margin-bottom: rem(15px);
         }
     }
     &__name, &__email, &__comment {
@@ -50,10 +56,18 @@
     }
     &__comment {
         &-input {
+            border: 0;
             font-family: 'Noto Sans', sans-serif;
             font-weight: 400;
             font-size: rem(16px);
             color: #61646d;
+            height: 60px;
+            width: 100%;
+            resize: none;
+            //background-color: #ccc;
+            //line-height: 190%;
+            word-wrap: break-word;
+            //text-align:center;
         }
     }
     &__title {
@@ -64,4 +78,18 @@
         margin-bottom: rem(15px);
     }
     
+    &__submit {
+        
+        &-btn {
+            padding: rem(10px) rem(35px);
+            background-color: #fff;
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 700;
+            font-size: rem(16px);
+            color: #02a9bb;
+            text-transform: uppercase;
+            border: 0;
+            cursor: pointer;
+        }
+    }
 }

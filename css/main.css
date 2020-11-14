@@ -918,6 +918,26 @@ input {
         .videos__block-video {
           width: 18.75rem;
           height: 10.375rem; } }
+      .videos__block-video--yt {
+        display: flex;
+        border: 2px dashed #02a9bb;
+        padding: 1.25rem; }
+      .videos__block-video--link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+      .videos__block-video--text {
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 700;
+        font-size: 1.125rem;
+        color: #000;
+        margin-bottom: 0.5rem;
+        text-align: center; }
+        .videos__block-video--text:nth-child(2) {
+          margin-bottom: 0; }
+      .videos__block-video--icon {
+        width: 25%; }
     .videos__block-subtitle {
       font-family: 'Noto Sans', sans-serif;
       font-weight: 400;
@@ -967,52 +987,74 @@ input {
   .footer__socials {
     max-width: 16.875rem; }
 
-.popup__window {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0.3125rem;
-  background-color: #02a9bb; }
-.popup__form {
-  background-color: transparent;
-  border: 2px dashed #fff;
-  padding: 0.9375rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-.popup__row {
-  margin-bottom: 0.625rem; }
-  .popup__row:last-child {
-    margin-bottom: 0; }
-  .popup__row-contacts {
-    display: flex; }
-  .popup__row-comment {
-    width: 100%; }
-.popup__name, .popup__email, .popup__comment {
-  display: flex;
-  flex-direction: column; }
-  .popup__name-title, .popup__email-title, .popup__comment-title {
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 400;
-    font-size: 1.25rem;
-    color: #fff;
-    margin-bottom: 0.3125rem; }
-.popup__name {
-  margin-right: 0.625rem; }
-  .popup__name-input, .popup__name-email {
+.popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); }
+  .popup__window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.3125rem;
+    background-color: #02a9bb; }
+  .popup__form {
+    background-color: transparent;
+    border: 2px dashed #fff;
+    padding: 0.9375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .popup__row {
+    margin-bottom: 0.625rem; }
+    .popup__row-contacts {
+      display: flex; }
+    .popup__row-comment {
+      width: 100%;
+      margin-bottom: 0.9375rem; }
+  .popup__name, .popup__email, .popup__comment {
+    display: flex;
+    flex-direction: column; }
+    .popup__name-title, .popup__email-title, .popup__comment-title {
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 400;
+      font-size: 1.25rem;
+      color: #fff;
+      margin-bottom: 0.3125rem; }
+  .popup__name {
+    margin-right: 0.625rem; }
+    .popup__name-input, .popup__name-email {
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+      color: #61646d; }
+  .popup__comment-input {
+    border: 0;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
     font-size: 1rem;
-    color: #61646d; }
-.popup__comment-input {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  color: #61646d; }
-.popup__title {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 700;
-  font-size: 2.1875rem;
-  color: #fff;
-  margin-bottom: 0.9375rem; }
+    color: #61646d;
+    height: 60px;
+    width: 100%;
+    resize: none;
+    word-wrap: break-word; }
+  .popup__title {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.1875rem;
+    color: #fff;
+    margin-bottom: 0.9375rem; }
+  .popup__submit-btn {
+    padding: 0.625rem 2.1875rem;
+    background-color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #02a9bb;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer; }
