@@ -14,6 +14,9 @@
         transform: translate(-50%, -50%);
         padding: rem(5px);
         background-color: #02a9bb;
+        @include smallphones {
+            width: 90%;
+        }
     }
     &__form {
         position: relative;
@@ -23,12 +26,18 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include smallphones {
+            align-items: flex-start;
+        }
     }
     &__row {
         margin-bottom: rem(10px);
         
         &-contacts {
             display: flex;
+            @include smallphones {
+                flex-direction: column;
+            }
         }
         &-comment {
             width: 100%;
@@ -48,6 +57,10 @@
     }
     &__name {
         margin-right: rem(10px);
+        @include smallphones {
+            margin-right: 0;
+            margin-bottom: rem(10px);
+        }
         &-input, &-email {
             font-family: 'Noto Sans', sans-serif;
             font-weight: 400;
@@ -77,10 +90,15 @@
         font-size: rem(35px);
         color: #fff;
         margin-bottom: rem(15px);
+        @include phones {
+            text-align: center;
+        }
     }
     
     &__submit {
-        
+        @include smallphones {
+            align-self: center;
+        }
         &-btn {
             padding: rem(10px) rem(35px);
             background-color: #fff;

@@ -470,22 +470,22 @@
         </div>
         <div class="popup">
             <div class="popup__window">
-                <form class="popup__form">
+                <form class="popup__form" action="send.php" method="get">
                     <h5 class="popup__title">Заказать просчет</h5>
                     <div class="popup__row popup__row-contacts">
                         <label class="popup__name">
                             <span class="popup__name-title">Ваше имя</span>
-                            <input type="text" class="popup__name-input" placeholder="Андрей">
+                            <input type="text" class="popup__name-input" placeholder="Андрей" name="username" required>
                         </label>
                         <label class="popup__email">
                             <span class="popup__email-title">Ваш email</span>
-                            <input type="email" class="popup__name-email" placeholder="example@gmail.com">
+                            <input type="email" class="popup__name-email" placeholder="example@gmail.com" name="email" required>
                         </label>
                     </div>
                     <div class="popup__row popup__row-comment">
                         <label class="popup__comment">
                             <span class="popup__comment-title">Ваш комментарий</span>
-                            <input type="textarea" class="popup__comment-input" placeholder="Хочу заказать просчет 5-минутного анимационного ролика.">
+                            <input type="textarea" class="popup__comment-input" placeholder="Хочу заказать просчет 5-минутного анимационного ролика." name="comment" required>
                         </label>
                     </div>
                     <div class="popup__submit">

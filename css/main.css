@@ -1002,6 +1002,9 @@ input {
     transform: translate(-50%, -50%);
     padding: 0.3125rem;
     background-color: #02a9bb; }
+    @media screen and (max-width: 500px) {
+      .popup__window {
+        width: 90%; } }
   .popup__form {
     position: relative;
     background-color: transparent;
@@ -1010,10 +1013,16 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    @media screen and (max-width: 500px) {
+      .popup__form {
+        align-items: flex-start; } }
   .popup__row {
     margin-bottom: 0.625rem; }
     .popup__row-contacts {
       display: flex; }
+      @media screen and (max-width: 500px) {
+        .popup__row-contacts {
+          flex-direction: column; } }
     .popup__row-comment {
       width: 100%;
       margin-bottom: 0.9375rem; }
@@ -1028,6 +1037,10 @@ input {
       margin-bottom: 0.3125rem; }
   .popup__name {
     margin-right: 0.625rem; }
+    @media screen and (max-width: 500px) {
+      .popup__name {
+        margin-right: 0;
+        margin-bottom: 0.625rem; } }
     .popup__name-input, .popup__name-email {
       font-family: 'Noto Sans', sans-serif;
       font-weight: 400;
@@ -1049,6 +1062,12 @@ input {
     font-size: 2.1875rem;
     color: #fff;
     margin-bottom: 0.9375rem; }
+    @media screen and (max-width: 670px) {
+      .popup__title {
+        text-align: center; } }
+  @media screen and (max-width: 500px) {
+    .popup__submit {
+      align-self: center; } }
   .popup__submit-btn {
     padding: 0.625rem 2.1875rem;
     background-color: #fff;
