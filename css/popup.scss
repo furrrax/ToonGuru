@@ -16,6 +16,7 @@
         background-color: #02a9bb;
     }
     &__form {
+        position: relative;
         background-color: transparent;
         border: 2px dashed #fff;
         padding: rem(15px);
@@ -90,6 +91,30 @@
             text-transform: uppercase;
             border: 0;
             cursor: pointer;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 0;
+        right: rem(11px);
+        transform: rotate(45deg);
+        
+        &-cross {
+            position: relative;
+            width: 4px;
+            height: 25px;
+            background: #fff;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 4px;
+                height: 25px;
+                background: #fff;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(90deg);
+            }
         }
     }
 }

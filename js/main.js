@@ -38,7 +38,7 @@ if ($(document).width() <= 960) {
 			colors.reverse();
 		}
 	} );
-};
+}
 
 /*
 setInterval(function(){
@@ -53,3 +53,19 @@ setInterval(function(){
     }
 }, 2000);
 */
+
+orderBtn = $('.order__desc-btn-link');
+popup = $('.popup');
+popupClose = $('.popup__close');
+body = $('body');
+
+
+orderBtn.on('click', function() {
+	popup.css('display', 'block');
+	body.css('overflow', 'hidden');
+});
+
+popupClose.on('click', function() {
+	popup.css('display', 'none');
+	body.css('overflow', 'auto');
+});

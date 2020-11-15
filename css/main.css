@@ -1003,6 +1003,7 @@ input {
     padding: 0.3125rem;
     background-color: #02a9bb; }
   .popup__form {
+    position: relative;
     background-color: transparent;
     border: 2px dashed #fff;
     padding: 0.9375rem;
@@ -1058,3 +1059,22 @@ input {
     text-transform: uppercase;
     border: 0;
     cursor: pointer; }
+  .popup__close {
+    position: absolute;
+    top: 0;
+    right: 0.6875rem;
+    transform: rotate(45deg); }
+    .popup__close-cross {
+      position: relative;
+      width: 4px;
+      height: 25px;
+      background: #fff; }
+      .popup__close-cross:before {
+        content: '';
+        position: absolute;
+        width: 4px;
+        height: 25px;
+        background: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg); }
