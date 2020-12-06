@@ -66,6 +66,8 @@
             font-weight: 400;
             font-size: rem(16px);
             color: #61646d;
+            padding: rem(5px);
+            border-radius: rem(5px);
         }
     }
     &__comment {
@@ -78,10 +80,9 @@
             height: 60px;
             width: 100%;
             resize: none;
-            //background-color: #ccc;
-            //line-height: 190%;
+            padding: rem(5px);
+            border-radius: rem(5px);
             word-wrap: break-word;
-            //text-align:center;
         }
     }
     &__title {
@@ -109,6 +110,7 @@
             text-transform: uppercase;
             border: 0;
             cursor: pointer;
+            border-radius: rem(50px);
         }
     }
 

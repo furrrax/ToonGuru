@@ -1045,7 +1045,9 @@ input {
       font-family: 'Noto Sans', sans-serif;
       font-weight: 400;
       font-size: 1rem;
-      color: #61646d; }
+      color: #61646d;
+      padding: 0.3125rem;
+      border-radius: 0.3125rem; }
   .popup__comment-input {
     border: 0;
     font-family: 'Noto Sans', sans-serif;
@@ -1055,6 +1057,8 @@ input {
     height: 60px;
     width: 100%;
     resize: none;
+    padding: 0.3125rem;
+    border-radius: 0.3125rem;
     word-wrap: break-word; }
   .popup__title {
     font-family: 'Noto Sans', sans-serif;
@@ -1077,7 +1081,8 @@ input {
     color: #02a9bb;
     text-transform: uppercase;
     border: 0;
-    cursor: pointer; }
+    cursor: pointer;
+    border-radius: 3.125rem; }
   .popup__close {
     position: absolute;
     top: 0;
